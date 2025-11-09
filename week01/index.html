@@ -1,13 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="WDD 131 – Dynamic Web Fundamentals – Your Name">
-    <meta author ="Jean C Ordoñez">
-    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Jean C Ordoñez</title>
+  <meta name="description" content="WDD 131 course homepage created by Jean C Ordoñez. This page demonstrates the use of HTML, CSS, and JavaScript." />
+  <meta name="author" content="Jean C Ordoñez" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+
+  <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scriptures</a></li>
+        <li><a href="https://github.com/your-user/wdd131/tree/main/final-project" target="_blank" rel="noopener">Final Project (placeholder)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Jean C Ordoñez</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/card1.jpg" alt="A picture representing me" />
+      <p>
+        My name is Jean C Ordoñez. I enjoy technology and web development. I am taking WDD 131 to improve my skills in HTML, CSS, and JavaScript so I can create dynamic and professional websites.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <img src="images/card2.jpg" alt="Project illustration" />
+      <p>
+        I enjoy working on personal projects such as websites, apps, and digital tools. Throughout this course, I will build new projects and apply what I learn each week.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Jean C Ordoñez — Peru</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

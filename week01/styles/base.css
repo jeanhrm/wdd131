@@ -1,0 +1,111 @@
+/* styles/base.css */
+
+/* Variables & fonts */
+:root {
+  --primary: #0b6fb2;
+  --accent: #f0b429;
+  --bg: #f7f9fb;
+  --text: #222;
+  --card-bg: #ffffff;
+  --max-width: 980px;
+  --radius: 12px;
+  font-family: 'Roboto', system-ui, "Segoe UI", Arial;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, var(--primary), #045a91);
+  color: white;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+/* Required: the <span> must be block */
+#course-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* NAV */
+nav { display: flex; justify-content: center; }
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: transform .12s, background .12s;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* MAIN GRID */
+main {
+  max-width: var(--max-width);
+  margin: 28px auto;
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* On desktop, two columns */
+@media(min-width: 700px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CARD COMPONENT */
+.card {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(12,18,30,0.06);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 28px;
+  padding: 18px 12px;
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+}
