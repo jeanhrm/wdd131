@@ -1,6 +1,4 @@
-/* styles/base.css */
 
-/* Variables & fonts */
 :root {
   --primary: #0b6fb2;
   --accent: #f0b429;
@@ -21,7 +19,6 @@ html, body {
   color: var(--text);
 }
 
-/* HEADER */
 header {
   background: linear-gradient(90deg, var(--primary), #045a91);
   color: white;
@@ -29,7 +26,6 @@ header {
   text-align: center;
 }
 
-/* Required: the <span> must be block */
 #course-title {
   display: block;
   font-family: 'Montserrat', sans-serif;
@@ -38,7 +34,6 @@ header {
   margin-bottom: 8px;
 }
 
-/* NAV */
 nav { display: flex; justify-content: center; }
 
 .nav-list {

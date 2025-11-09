@@ -1,0 +1,28 @@
+/* styles/temples-large.css - loaded after temples.css */
+
+/* Larger screens: show nav inline and hide hamburger */
+@media (min-width: 700px){
+  .hambtn{display:none}
+  .nav{position:static;display:block;background:transparent;box-shadow:none}
+  .nav ul{flex-direction:row;gap:12px;padding:0}
+  .nav a{color:#fff;padding:6px 10px}
+  .nav a:hover{background:rgba(255,255,255,0.12);color:#fff}
+
+  .header-inner{align-items:center}
+}
+
+/* Gallery: grid with responsive columns (auto-fit) */
+@media (min-width: 700px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:16px}
+  .gallery img{height:240px}
+}
+
+@media (min-width: 1000px){
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .gallery img{height:220px}
+}
+
+/* Center main a bit more for very large screens */
+@media (min-width: 1200px){
+  main{padding:0}
+}

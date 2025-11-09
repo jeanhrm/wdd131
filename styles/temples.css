@@ -1,0 +1,49 @@
+/* styles/temples.css - mobile first */
+
+:root{
+  --bg: #f6fbff;
+  --card: #ffffff;
+  --accent: #0b6fb2;
+  --muted: #6b7280;
+  --max-width: 980px;
+  --gap: 12px;
+  font-family: 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:#111}
+a{color:inherit}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--accent),#045a91);color:#fff;padding:12px 8px}
+.header-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;gap:12px;position:relative}
+.site-title{font-family:'Montserrat',sans-serif;font-weight:600;margin:0;font-size:1.1rem;}
+
+/* Hamburger - visible on mobile, hidden on large via media query */
+.hambtn{
+  background:transparent;border:0;color:#fff;font-size:1.6rem;padding:6px 8px;border-radius:6px;
+}
+.hambtn:focus{outline:2px solid rgba(255,255,255,0.35)}
+
+/* Navigation: mobile hidden by default, toggled by .open on nav (JS) */
+.nav{position:absolute;left:0;right:0;top:100%;background:rgba(255,255,255,0.98);transform-origin:top;box-shadow:0 8px 24px rgba(0,0,0,0.12);display:none}
+.nav.open{display:block}
+.nav ul{list-style:none;margin:0;padding:8px;display:flex;flex-direction:column;gap:6px}
+.nav a{display:block;padding:10px;border-radius:6px;text-decoration:none;color:#0b3b58}
+.nav a:hover{background:rgba(11,111,178,0.08)}
+
+/* Main */
+main{max-width:var(--max-width);margin:18px auto;padding:0 12px}
+.page-heading{text-align:center;margin:8px 0 16px 0;font-weight:600;color:var(--accent)}
+
+/* Gallery grid: mobile = 1 column */
+.gallery{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+.gallery figure{background:var(--card);padding:8px;border-radius:10px;box-shadow:0 6px 18px rgba(12,18,30,0.06);margin:0;display:flex;flex-direction:column}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+.gallery figcaption{text-align:center;padding-top:8px;color:var(--muted);font-size:0.95rem}
+
+/* Footer */
+.site-footer{max-width:var(--max-width);margin:24px auto;padding:12px;text-align:center;color:var(--muted);font-size:0.95rem}
+
+/* Accessibility: hide nav for keyboard when closed - JS toggles aria-expanded */
+.nav[hidden]{display:none}
