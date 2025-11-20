@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Peru</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Peru</h1>
+    <p class="tagline">Land of the Andes, the Amazon, and the Pacific Coast</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/peru-hero-small.webp" media="(max-width: 600px)">
+        <source srcset="images/peru-hero-medium.webp" media="(max-width: 1024px)">
+        <img src="images/peru-hero-large.webp"
+             alt="Peruvian landscape with mountains"
+             width="960" height="400">
+      </picture>
+    </section>
+
+    <section class="info">
+      <h2>About Peru</h2>
+      <p>
+        Peru is a country on the western side of South America, bordered by the
+        Pacific Ocean. It is known for its rich history, diverse landscapes, and
+        vibrant cultures.
+      </p>
+      <ul>
+        <li><strong>Capital:</strong> Lima</li>
+        <li><strong>Official language:</strong> Spanish (and many indigenous languages)</li>
+        <li><strong>Famous sites:</strong> Machu Picchu, the Nazca Lines, Lake Titicaca, the Amazon Rainforest</li>
+        <li><strong>Highlights:</strong> Andean mountains, coastal deserts, Amazon jungle, and incredible food such as ceviche and lomo saltado.</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <div class="weather-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img">
+          <circle cx="32" cy="32" r="14" />
+          <line x1="32" y1="4" x2="32" y2="14" />
+          <line x1="32" y1="50" x2="32" y2="60" />
+          <line x1="4" y1="32" x2="14" y2="32" />
+          <line x1="50" y1="32" x2="60" y2="32" />
+          <line x1="14" y1="14" x2="20" y2="20" />
+          <line x1="44" y1="44" x2="50" y2="50" />
+          <line x1="14" y1="50" x2="20" y2="44" />
+          <line x1="44" y1="20" x2="50" y2="14" />
+        </svg>
+      </div>
+
+      <div class="weather-card">
+        <dl>
+          <div>
+            <dt>Current temperature:</dt>
+            <dd><span id="temp"></span> °C</dd>
+          </div>
+          <div>
+            <dt>Wind speed:</dt>
+            <dd><span id="wind"></span> km/h</dd>
+          </div>
+          <div>
+            <dt>Wind chill:</dt>
+            <dd><span id="windchill"></span></dd>
+          </div>
+        </dl>
+        <p class="weather-note">
+          Weather values are for demonstration purposes only.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Discover Peru</p>
+    <p>Last modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+</html>
