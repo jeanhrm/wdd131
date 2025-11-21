@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+<body>
+  <header>
+    <h1>Latter-day Temples</h1>
+    <nav>
+      <ul>
+        <li><button data-filter="home">Home</button></li>
+        <li><button data-filter="old">Old</button></li>
+        <li><button data-filter="new">New</button></li>
+        <li><button data-filter="large">Large</button></li>
+        <li><button data-filter="small">Small</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="current-filter">All Temples</h2>
+    <section id="temple-cards" class="temple-grid">
+      <!-- Cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Temples | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
