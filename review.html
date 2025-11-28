@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <section class="confirmation">
+      <p>Your product review has been submitted successfully.</p>
+
+      <p>
+        You have submitted
+        <span id="review-count" class="highlight-number">0</span>
+        product review(s) so far.
+      </p>
+
+      <p><a href="form.html" class="back-link">Submit another review</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Product Review</p>
+  </footer>
+
+  <script>
+    // REVIEW COUNTER USING localStorage
+    const key = "reviewCount";
+    let count = Number(localStorage.getItem(key)) || 0;
+    count++;
+    localStorage.setItem(key, count);
+
+    const span = document.getElementById("review-count");
+    if (span) {
+      span.textContent = count;
+    }
+  </script>
+</body>
+</html>
