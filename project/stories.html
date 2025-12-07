@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories | Stories and Legends of Huancavelica</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <h1>Stories &amp; Legends of Huancavelica</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html" aria-current="page">Stories</a></li>
+        <li><a href="share.html">Share a Story</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <h2>Story collection</h2>
+      <p>
+        Explore a growing collection of traditional stories and legends from different
+        provinces of Huancavelica. Choose a tale to read and reflect on its message.
+      </p>
+    </header>
+
+    <section aria-labelledby="stories-list-heading">
+      <h3 id="stories-list-heading">Available stories</h3>
+
+      <div class="card-grid">
+        <article class="story-card" id="laiwi" data-story-id="hermanos-laiwi">
+          <figure>
+            <img src="images/hermanos-laiwi.jpg"
+                 alt="Illustration of two siblings in the Andes"
+                 loading="lazy">
+          </figure>
+          <h4>Los Hermanos Laiwi</h4>
+          <p>
+            A legend about two siblings who defend their village from a mysterious danger
+            in the mountains.
+          </p>
+          <p class="meta">
+            Province: Angaraes · Reading time: 8–10 minutes
+          </p>
+          <div class="card-actions">
+            <a class="button" href="story-laiwi.html">Read story</a>
+            <button class="button secondary favorite-button" type="button">
+              ☆ Add to favorites
+            </button>
+          </div>
+        </article>
+
+        <article class="story-card" id="choclococha" data-story-id="laguna-choclococha">
+          <figure>
+            <img src="images/laguna-choclococha.jpg"
+                 alt="Lake Choclococha surrounded by hills"
+                 loading="lazy">
+          </figure>
+          <h4>La Laguna de Choclococha</h4>
+          <p>
+            This story explains how the spirits of wind and water protect the lagoon and
+            punish those who disrespect nature.
+          </p>
+          <p class="meta">
+            Province: Castrovirreyna · Reading time: 6–8 minutes
+          </p>
+          <div class="card-actions">
+            <a class="button" href="#top">Reading page coming soon</a>
+            <button class="button secondary favorite-button" type="button">
+              ☆ Add to favorites
+            </button>
+          </div>
+        </article>
+
+        <article class="story-card" id="santa-barbara" data-story-id="mina-santa-barbara">
+          <figure>
+            <img src="images/mina-santa-barbara.webp"
+                 alt="Entrance of the Santa Bárbara mine"
+                 loading="lazy">
+          </figure>
+          <h4>La Mina de Santa Bárbara</h4>
+          <p>
+            A mixture of history and legend about miners, hidden treasures, and strange
+            sounds heard deep inside the mine.
+          </p>
+          <p class="meta">
+            Province: Huancavelica · Reading time: 7–9 minutes
+          </p>
+          <div class="card-actions">
+            <a class="button" href="#top">Reading page coming soon</a>
+            <button class="button secondary favorite-button" type="button">
+              ☆ Add to favorites
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="favorites-heading" class="favorites-section">
+      <h3 id="favorites-heading">Your favorite stories</h3>
+      <p>
+        When you click “Add to favorites,” the story will be saved in your browser using
+        <code>localStorage</code>. The list below will show your saved legends.
+      </p>
+      <ul id="favorites-list" class="favorites-list">
+        <!-- JavaScript will insert favorite stories here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Stories &amp; Legends of Huancavelica.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

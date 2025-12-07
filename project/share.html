@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share a Story | Stories and Legends of Huancavelica</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <h1>Stories &amp; Legends of Huancavelica</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="share.html" aria-current="page">Share a Story</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <h2>Share a story or legend from your community</h2>
+      <p>
+        Use this form to share a traditional story or legend from Huancavelica.
+        The information will be reviewed by a teacher before being added to the website.
+      </p>
+    </header>
+
+    <section aria-labelledby="share-form-heading">
+      <h3 id="share-form-heading">Story submission form</h3>
+
+      <form id="story-form" novalidate>
+        <fieldset>
+          <legend>Your information</legend>
+
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="form-field">
+            <label for="role">Your role</label>
+            <select id="role" name="role" required>
+              <option value="">Select an option</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="parent">Parent</option>
+              <option value="community-member">Community member</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Story details</legend>
+
+          <div class="form-field">
+            <label for="story-title">Story title</label>
+            <input type="text" id="story-title" name="story-title" required>
+          </div>
+
+          <div class="form-field">
+            <label for="province">Province</label>
+            <input type="text" id="province" name="province" placeholder="e.g., Angaraes, Huancavelica" required>
+          </div>
+
+          <div class="form-field">
+            <span>Type of story</span>
+            <div class="option-group">
+              <label>
+                <input type="radio" name="story-type" value="legend" required>
+                Legend
+              </label>
+              <label>
+                <input type="radio" name="story-type" value="myth">
+                Myth
+              </label>
+              <label>
+                <input type="radio" name="story-type" value="personal-story">
+                Personal story based on tradition
+              </label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="story-text">Story text</label>
+            <textarea id="story-text" name="story-text" rows="8"
+                      placeholder="Write or paste the story here..." required></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Additional comments (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <div class="form-field checkbox-field">
+            <label>
+              <input type="checkbox" id="permission" name="permission" required>
+              I confirm that this story can be shared for educational purposes.
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="button primary" type="submit">Submit story</button>
+          <button class="button secondary" type="reset">Clear form</button>
+        </div>
+
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Stories &amp; Legends of Huancavelica.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

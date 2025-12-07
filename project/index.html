@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories and Legends of Huancavelica</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <h1>Stories &amp; Legends of Huancavelica</h1>
+      <p class="tagline">An educational reading website for local tales and cultural heritage.</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="share.html">Share a Story</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Read, imagine, and connect with Huancavelica.</h2>
+        <p>
+          This website shares traditional stories and legends from Huancavelica, Peru.
+          It is designed to help students practice reading in an engaging way while they
+          learn about the culture and history of their own region.
+        </p>
+        <p>
+          Start exploring the collection of tales or choose one featured legend to read today.
+        </p>
+        <a class="button primary" href="stories.html">Browse all stories</a>
+      </div>
+
+      <figure class="hero-image">
+        <img src="images/huancavelica-mountains.jpg"
+             alt="Mountain landscape near Huancavelica"
+             loading="lazy">
+        <figcaption>Huancavelica's mountains inspire many of its legends.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="featured-heading" class="featured-stories">
+      <h2 id="featured-heading">Featured stories</h2>
+
+      <div class="card-grid">
+        <article class="story-card">
+          <h3>Los Hermanos Laiwi</h3>
+          <p>
+            A legend about two siblings whose courage and sacrifice changed the destiny
+            of their community in the high Andes.
+          </p>
+          <a class="button" href="story-laiwi.html">Read this story</a>
+        </article>
+
+        <article class="story-card">
+          <h3>La Laguna de Choclococha</h3>
+          <p>
+            A traditional tale that explains how the winds, water, and animals protect
+            a sacred lagoon in Huancavelica.
+          </p>
+          <a class="button" href="stories.html#choclococha">See details</a>
+        </article>
+
+        <article class="story-card">
+          <h3>La Mina de Santa Bárbara</h3>
+          <p>
+            A story that mixes history and mystery around one of the most famous mines
+            of the region.
+          </p>
+          <a class="button" href="stories.html#santa-barbara">See details</a>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-to-use-heading" class="reading-tips">
+      <h2 id="how-to-use-heading">How to use this website</h2>
+      <ol>
+        <li>Choose a story that interests you from the <a href="stories.html">Stories</a> page.</li>
+        <li>Read the text carefully and pay attention to unfamiliar words.</li>
+        <li>After reading, talk with a friend or teacher about the message of the story.</li>
+        <li>Return to the website and mark your favorite legends (this feature will use localStorage).</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Stories &amp; Legends of Huancavelica. All rights reserved.</p>
+    <p class="small-text">
+      Text adapted from local oral traditions. This site is for educational purposes.
+    </p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
